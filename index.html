@@ -7,22 +7,26 @@
     <link rel="stylesheet" href="css/reset.css">
     <script src="https://kit.fontawesome.com/4aa783b0a2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/laptop.css">
     <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <title>Home</title>
 </head>
 
 <body>
     <header class="header">
         <div class="header_menu">
-            <nav>
+            <nav class="header_nav">
                 <ul>
-                    <li>
-                        <a class="active" href="index.html" target="_blank">Home</a>
-                        <a class="no_active" href="artworks.html" target="_blank">Artworks</a>
-                        <a class="no_active" href="contact.html" target="_blank">Contact</a>
-                    </li>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a class="no_active" href="artworks.html">Artworks</a></li>
+                    <li><a class="no_active" href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+
+            <i class="fa-solid fa-bars burger"></i>
+            <i class="fa-solid fa-xmark"></i>
 
             <div class="logo">
                 <a href="index.html">
@@ -32,7 +36,7 @@
 
             <div class="header_menu_right">
                 <a class="no_active" href="#">Sign In</a>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <a class="no_active" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
         </div>
     </header>
@@ -75,19 +79,27 @@
     </main>
 
     <section class="gallery_section">
-        <div class="gallery_inside_section">
-            <h2>Our Gallery</h2>
+            <h2 class="our_gallery_h2">Our Gallery</h2>
+
+            <div class="gallery_inside_section">
 
             <div class="gallery_pics_container_1">
-                <img src="images/Rectangle 85.png" alt="">
-                <img src="images/Rectangle 93.png" alt="">
+                <div class="gallery_img1"></div>
+                <div class="gallery_img2"></div>
             </div>
 
             <div class="gallery_pics_container_2">
+                <div class="gallery_img3"></div>
+                <div class="gallery_img4"></div>
+                <div class="gallery_img5"></div>
+            </div>
+
+
+            <!-- <div class="gallery_pics_container_2">
                 <img src="images/Rectangle 92.png" alt="">
                 <img src="images/Rectangle 94.png" alt="">
                 <img src="images/Rectangle 90.png" alt="">
-            </div>
+            </div> -->
 
         </div>
     </section>
@@ -126,7 +138,10 @@
             <h2>Subscribe to Newsletter</h2>
 
             <div class="subscribe">
-                <input placeholder="Email Address" type="text"><button>SUBSCRIBE</button>
+                <form action="">
+                <input type="email" name="Email" placeholder="Email Address">
+                <button type="submit">SUBSCRIBE</button>
+            </form>
             </div>
         </div>
 
@@ -175,7 +190,7 @@
         <div class="footer_container">
 
             <div class="footer_section_1">
-                <h2>Hele</h2>
+                <h2>Help</h2>
                 <nav>
                     <ul>
                         <li>
@@ -186,11 +201,11 @@
                 </nav>
 
                 <div class="icons">
-                <a href="http://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                <a href="http://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="http://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="http://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="http://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="http://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                </div>
             </div>
-        </div>
 
 
             <div class="logo">
@@ -200,9 +215,9 @@
             </div>
 
             <div class="footer_section_3">
-                <p><i class="fa-solid fa-phone"></i> +123 45 67 89</p>
-                <p><i class="fa-solid fa-envelope"></i> example@mail.com</p>
-                <p><i class="fa-solid fa-location-dot"></i> Rustaveli avenue, 30</p>
+                <a href="tel:+123 45 67 89"><i class="fa-solid fa-phone" target="_blank"></i>+123 45 67 89</a> <br>
+                <a href="mailto:example@mail.com"><i class="fa-solid fa-envelope" target="_blank"></i>example@mail.com</a> <br>
+                <a href="https://maps.app.goo.gl/fP4TQYDX3xp3goe77" target="_blank"><i class="fa-solid fa-location-dot"></i>Rustaveli avenue, 30</a>
             </div>
 
 
@@ -211,6 +226,8 @@
 
 
 
+<!-- javascript  -->
+<script src="script.js"></script>
 
 </body>
 
