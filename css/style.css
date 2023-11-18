@@ -1,8 +1,3 @@
-@font-face {
-    font-family: inter_regular;
-    src: url("../fonts/Inter-Regular.ttf");
-}
-
 @keyframes color {
     0% {
         color: #D5906E;
@@ -15,6 +10,10 @@
     100% {
         color: #D5906E;
     }
+}
+
+input {
+    color: white;
 }
 
 .header {
@@ -34,16 +33,23 @@
     width: 100%;
 }
 
-.header nav ul li {
+.header_nav ul {
     display: flex;
     column-gap: 24px;
+}
+
+.burger,
+.fa-xmark {
+    display: none;
+    font-size: 40px;
+    color: white;
 }
 
 .active,
 .no_active {
     color: white;
     font-size: 18px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
 }
 
@@ -51,17 +57,25 @@
     color: #D5906E;
 }
 
+.active:hover {
+    color: #ab7052;
+}
+
+.no_active:hover {
+    color: #D5906E;
+}
+
 .logo h1 {
     color: white;
     font-size: 36px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
 }
 
 .logo span {
     color: #D5906E;
     font-size: 36px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     margin-left: -7px;
     animation-name: color;
@@ -76,7 +90,6 @@
 
 .fa-cart-shopping {
     font-size: 18px;
-    color: white;
 }
 
 .main_cover,
@@ -124,7 +137,7 @@
 .main_cover_container_contact h2 {
     color: white;
     font-size: 40px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     line-height: 48px;
     margin-bottom: 40px;
@@ -142,7 +155,7 @@
 .main_cover_container_contact input::placeholder {
     color: rgba(255, 255, 255, 0.76);
     font-size: 14px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     line-height: 17px;
 }
@@ -151,7 +164,7 @@
     background-color: transparent;
     color: rgba(255, 255, 255, 0.76);
     font-size: 14px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     line-height: 17px;
     padding: 8px;
@@ -165,13 +178,17 @@
     margin-top: 36px;
     color: white;
     font-size: 16px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     line-height: 19px;
     background-color: #D5906E;
     border-radius: 10px;
     padding: 19px 42px;
     border: 0;
+}
+
+.contact_submit:hover {
+    color: black;
 }
 
 .inputs_container {
@@ -187,7 +204,7 @@
 .main_cover h2 {
     color: white;
     font-size: 40px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
     line-height: 48px;
     margin-bottom: 16px;
@@ -196,7 +213,7 @@
 .main_cover p {
     color: white;
     font-size: 16px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     line-height: 24px;
     margin-bottom: 56px;
@@ -208,13 +225,17 @@
     border: 2px solid #D5906E;
     color: white;
     font-size: 16px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     line-height: 24px;
     border-radius: 10px;
 }
 
-.search {
+.main_cover button:hover {
+    background-color: #D5906E;
+}
+
+.search form {
     display: flex;
     margin: auto;
     margin-top: 47px;
@@ -225,6 +246,7 @@
     border: 2px solid #D5906E;
     padding-left: 16px;
     max-width: 588px;
+    color: white;
     width: 100%;
     height: 56px;
     border-radius: 10px 0 0 10px;
@@ -236,16 +258,20 @@
     color: white;
     border: 0;
     font-size: 18px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     border-radius: 0 10px 10px 0;
     line-height: 26px;
 }
 
+.search button:hover {
+    color: black;
+}
+
 .search input::placeholder {
     color: rgba(213, 144, 110, 0.52);
     font-size: 16px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     line-height: 24px;
 }
@@ -264,7 +290,7 @@ main {
 .main_tag_container figcaption {
     color: #B53B1B;
     font-size: 18px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
     line-height: 26px;
     text-align: center;
@@ -274,35 +300,69 @@ main {
 .gallery_section {
     width: 100%;
     background-color: #402101;
-    padding: 96px 120px;
+    padding-top:96px;
+    padding-bottom:96px;
 }
 
-.gallery_inside_section {
-    margin: auto;
-}
-
-.gallery_inside_section h2 {
+.our_gallery_h2 {
     color: white;
     font-size: 40px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
     line-height: 48px;
     margin-bottom: 40px;
     text-align: center;
 }
 
+.gallery_inside_section {
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
 .gallery_pics_container_1 {
     display: flex;
     column-gap: 40px;
+}
+
+.gallery_img1 {
+    background-image: url("../images/Rectangle\ 85.png");
+    max-width: 704px;
     width: 100%;
-    max-width: 1200px;
+    height: 322px;
+}
+
+.gallery_img2 {
+    background-image: url("../images/Rectangle\ 93.png");
+    max-width: 456px;
+    width: 100%;
+    height: 322px;
+}
+
+.gallery_img3 {
+    background-image: url("../images/Rectangle\ 92.png");
+    max-width: 332px;
+    width: 100%;
+    height: 260px;
+}
+
+.gallery_img4 {
+    background-image: url("../images/Rectangle\ 94.png");
+    max-width: 332px;
+    width: 100%;
+    height: 260px;
+}
+
+.gallery_img5 {
+    background-image: url("../images/Rectangle\ 90.png");
+    max-width: 456px;
+    width: 100%;
+    height: 260px;
 }
 
 .gallery_pics_container_2 {
     display: flex;
     column-gap: 40px;
-    width: 100%;
-    max-width: 1200px;
     margin-top: 40px;
 }
 
@@ -321,7 +381,7 @@ main {
 .latest_products h2 {
     color: #402101;
     font-size: 40px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
     line-height: 48px;
     text-align: center;
@@ -351,7 +411,7 @@ main {
     font-size: 16px;
     font-weight: 400;
     padding: 15px 17px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
 }
 
 .subscribe_to_newsletter {
@@ -368,12 +428,12 @@ main {
 .subscribe_to_newsletter_inside h2 {
     color: white;
     font-size: 40px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
     margin-bottom: 56px;
 }
 
-.subscribe {
+.subscribe form {
     width: 482px;
     display: flex;
     column-gap: 0;
@@ -390,20 +450,25 @@ main {
 .subscribe::placeholder {
     color: white;
     font-size: 16px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
 }
 
 .subscribe button {
     color: #402101;
     font-size: 18px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     border: 0;
     font-weight: 400;
     padding: 17px 25px;
     line-height: 22px;
     border-radius: 0 10px 10px 0;
     background-color: white;
+}
+
+.subscribe button:hover {
+    color: white;
+    background-color: #402101;
 }
 
 .about_us {
@@ -417,7 +482,7 @@ main {
 .about_us h2 {
     color: #402101;
     font-size: 36px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
     text-align: center;
     margin-bottom: 48px;
@@ -426,6 +491,7 @@ main {
 .about_us_container {
     display: flex;
     column-gap: 32px;
+    justify-content: space-between;
 }
 
 .the_text {
@@ -439,7 +505,7 @@ main {
 .the_text h4 {
     color: #B53B1B;
     font-size: 24px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     line-height: 32px;
     margin-bottom: 16px;
@@ -448,7 +514,7 @@ main {
 .the_text p {
     color: #402101;
     font-size: 16px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     line-height: 24px;
 }
@@ -456,7 +522,7 @@ main {
 .about_us_part_2 h5 {
     color: #402101;
     font-size: 24px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
     line-height: 32px;
     text-align: center;
@@ -469,12 +535,16 @@ main {
     border-radius: 10px;
     color: white;
     font-size: 24px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     line-height: 32px;
     border: 0;
     margin: auto;
     display: block;
+}
+
+.help_center:hover {
+    background-color: black;
 }
 
 .shop_all {
@@ -494,7 +564,7 @@ main {
 .shop_all_title h2 {
     color: #623932;
     font-size: 40px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     line-height: 48px;
 }
@@ -506,7 +576,7 @@ main {
 .shop_all_title p {
     color: #402101;
     font-size: 24px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     line-height: 29px;
     padding: 8px 21px;
@@ -523,7 +593,7 @@ main {
 .shop_all_container1 figcaption {
     color: #B53B1B;
     font-size: 16px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     margin-top: 24px;
 }
@@ -538,7 +608,7 @@ main {
 .price_and_cart p {
     color: #402101;
     font-size: 24px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     line-height: 32px;
 }
@@ -559,7 +629,7 @@ main {
 .pages p {
     color: #402101;
     font-size: 18px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     text-align: center;
     padding: 17px 19px;
@@ -582,7 +652,7 @@ main {
 .contact_section h2 {
     color: #402101;
     font-size: 40px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
     line-height: 48px;
     margin-bottom: 40px;
@@ -601,7 +671,7 @@ main {
 
 .contact_section_text_container2 {
     width: 170px;
-    margin-left:20px;
+    margin-left: 20px;
 }
 
 .contact_section_text {
@@ -611,14 +681,14 @@ main {
 .contact_section_text h3 {
     color: #B53B1B;
     font-size: 18px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
 }
 
-.contact_section_text p {
+.contact_section_text a {
     color: #623932;
     font-size: 16px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 300;
 }
 
@@ -640,7 +710,7 @@ footer {
 .footer_section_1 h2 {
     color: white;
     font-size: 18px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     line-height: 26px;
     margin-bottom: 16px;
@@ -650,7 +720,7 @@ footer {
     color: white;
     font-size: 16px;
     display: block;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 300;
     line-height: 24px;
     margin-bottom: 8px;
@@ -681,17 +751,17 @@ footer {
     width: 200px;
 }
 
-.footer_section_3 p {
+.footer_section_3 a {
     color: white;
     font-size: 16px;
-    font-family: "inter_regular";
+    font-family: 'Inter', sans-serif;
     font-weight: 300;
     line-height: 24px;
-    margin-bottom: 16px;
 }
 
 .footer_section_3 i {
     font-size: 18px;
     color: white;
     margin-right: 16px;
+    margin-bottom: 16px;
 }
