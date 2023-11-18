@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/4aa783b0a2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <title>Artworks</title>
 </head>
 
@@ -15,15 +16,17 @@
 <body>
     <header class="header">
         <div class="header_menu">
-            <nav>
+            <nav class="header_nav">
                 <ul>
-                    <li>
-                        <a class="active" href="index.html" target="_blank">Home</a>
-                        <a class="no_active" href="artworks.html" target="_blank">Artworks</a>
-                        <a class="no_active" href="contact.html" target="_blank">Contact</a>
-                    </li>
+                    <li><a class="no_active" href="index.html">Home</a></li>
+                    <li><a class="active" href="artworks.html">Artworks</a></li>
+                    <li><a class="no_active" href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+
+            <i class="fa-solid fa-bars burger"></i>
+            <i class="fa-solid fa-xmark"></i>
+
 
             <div class="logo">
                 <a href="index.html">
@@ -33,7 +36,7 @@
 
             <div class="header_menu_right">
                 <a class="no_active" href="#">Sign In</a>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <a class="no_active" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
         </div>
     </header>
@@ -42,181 +45,185 @@
         <div class="main_cover_container">
             <h2>Find Something Beautiful</h2>
             <div class="search">
-                <input type="text" placeholder="Search For Anything">
-                <button>SEARCH</button>
+                <form action="">
+                    <input type="search" name="search" placeholder="Search For Anything">
+                    <button type="submit">SEARCH</button>
+                </form>
             </div>
         </div>
     </section>
 
-  
-
-        <section class="shop_all">
-
-                <div class="shop_all_title">
-                <h2>SHOP ALL / artworks</h2>
-                <p>SORT<i class="fa-solid fa-angles-down"></i></p>
-            </div>
 
 
-            <div class="shop_all_container1">
+    <section class="shop_all">
+
+        <div class="shop_all_title">
+            <h2>SHOP ALL / artworks</h2>
+            <p>SORT<i class="fa-solid fa-angles-down"></i></p>
+        </div>
+
+
+        <div class="shop_all_container1">
 
             <figure>
                 <img src="images/Rectangle 102.png" alt="">
                 <figcaption>Product Name</figcaption>
-                
+
                 <div class="price_and_cart">
-                <p>$40.00</p>
-                <img src="images/material-symbols_add-shopping-cart.svg" alt="">
-            </div>
+                    <p>$40.00</p>
+                    <img src="images/material-symbols_add-shopping-cart.svg" alt="">
+                </div>
             </figure>
 
             <figure>
                 <img src="images/Rectangle 102.png" alt="">
                 <figcaption>Product Name</figcaption>
-                
+
                 <div class="price_and_cart">
-                <p>$40.00</p>
-                <img src="images/material-symbols_add-shopping-cart.svg" alt="">
-            </div>
+                    <p>$40.00</p>
+                    <img src="images/material-symbols_add-shopping-cart.svg" alt="">
+                </div>
             </figure>
 
             <figure>
                 <img src="images/Rectangle 102.png" alt="">
                 <figcaption>Product Name</figcaption>
-                
+
                 <div class="price_and_cart">
-                <p>$40.00</p>
-                <img src="images/material-symbols_add-shopping-cart.svg" alt="">
-            </div>
+                    <p>$40.00</p>
+                    <img src="images/material-symbols_add-shopping-cart.svg" alt="">
+                </div>
             </figure>
 
+        </div>
+
+
+        <div class="shop_all_container1">
+
+            <figure>
+                <img src="images/Rectangle 102.png" alt="">
+                <figcaption>Product Name</figcaption>
+
+                <div class="price_and_cart">
+                    <p>$40.00</p>
+                    <img src="images/material-symbols_add-shopping-cart.svg" alt="">
+                </div>
+            </figure>
+
+            <figure>
+                <img src="images/Rectangle 102.png" alt="">
+                <figcaption>Product Name</figcaption>
+
+                <div class="price_and_cart">
+                    <p>$40.00</p>
+                    <img src="images/material-symbols_add-shopping-cart.svg" alt="">
+                </div>
+            </figure>
+
+            <figure>
+                <img src="images/Rectangle 102.png" alt="">
+                <figcaption>Product Name</figcaption>
+
+                <div class="price_and_cart">
+                    <p>$40.00</p>
+                    <img src="images/material-symbols_add-shopping-cart.svg" alt="">
+                </div>
+            </figure>
+
+        </div>
+
+
+        <div class="shop_all_container1">
+
+            <figure>
+                <img src="images/Rectangle 102.png" alt="">
+                <figcaption>Product Name</figcaption>
+
+                <div class="price_and_cart">
+                    <p>$40.00</p>
+                    <img src="images/material-symbols_add-shopping-cart.svg" alt="">
+                </div>
+            </figure>
+
+            <figure>
+                <img src="images/Rectangle 102.png" alt="">
+                <figcaption>Product Name</figcaption>
+
+                <div class="price_and_cart">
+                    <p>$40.00</p>
+                    <img src="images/material-symbols_add-shopping-cart.svg" alt="">
+                </div>
+            </figure>
+
+            <figure>
+                <img src="images/Rectangle 102.png" alt="">
+                <figcaption>Product Name</figcaption>
+
+                <div class="price_and_cart">
+                    <p>$40.00</p>
+                    <img src="images/material-symbols_add-shopping-cart.svg" alt="">
+                </div>
+            </figure>
+
+        </div>
+
+        <div class="pages">
+            <p>0</p>
+            <p>1</p>
+            <p>2</p>
+            <p class="active_page">3</p>
+            <p>4</p>
+            <p>...</p>
+            <p>17</p>
+            <p>0</p>
+        </div>
+    </section>
+
+
+
+    <footer>
+
+        <div class="footer_container">
+
+            <div class="footer_section_1">
+                <h2>Help</h2>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">Help Centre</a>
+                            <a href="#">Privacy Settings</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="icons">
+                    <a href="http://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="http://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="http://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                </div>
             </div>
 
 
-            <div class="shop_all_container1">
-
-                <figure>
-                    <img src="images/Rectangle 102.png" alt="">
-                    <figcaption>Product Name</figcaption>
-                    
-                    <div class="price_and_cart">
-                    <p>$40.00</p>
-                    <img src="images/material-symbols_add-shopping-cart.svg" alt="">
-                </div>
-                </figure>
-    
-                <figure>
-                    <img src="images/Rectangle 102.png" alt="">
-                    <figcaption>Product Name</figcaption>
-                    
-                    <div class="price_and_cart">
-                    <p>$40.00</p>
-                    <img src="images/material-symbols_add-shopping-cart.svg" alt="">
-                </div>
-                </figure>
-    
-                <figure>
-                    <img src="images/Rectangle 102.png" alt="">
-                    <figcaption>Product Name</figcaption>
-                    
-                    <div class="price_and_cart">
-                    <p>$40.00</p>
-                    <img src="images/material-symbols_add-shopping-cart.svg" alt="">
-                </div>
-                </figure>
-    
-                </div>
-
-
-                <div class="shop_all_container1">
-
-                    <figure>
-                        <img src="images/Rectangle 102.png" alt="">
-                        <figcaption>Product Name</figcaption>
-                        
-                        <div class="price_and_cart">
-                        <p>$40.00</p>
-                        <img src="images/material-symbols_add-shopping-cart.svg" alt="">
-                    </div>
-                    </figure>
-        
-                    <figure>
-                        <img src="images/Rectangle 102.png" alt="">
-                        <figcaption>Product Name</figcaption>
-                        
-                        <div class="price_and_cart">
-                        <p>$40.00</p>
-                        <img src="images/material-symbols_add-shopping-cart.svg" alt="">
-                    </div>
-                    </figure>
-        
-                    <figure>
-                        <img src="images/Rectangle 102.png" alt="">
-                        <figcaption>Product Name</figcaption>
-                        
-                        <div class="price_and_cart">
-                        <p>$40.00</p>
-                        <img src="images/material-symbols_add-shopping-cart.svg" alt="">
-                    </div>
-                    </figure>
-        
-                    </div>
-
-                    <div class="pages">
-                        <p>0</p>
-                        <p>1</p>
-                        <p>2</p>
-                        <p class="active_page">3</p>
-                        <p>4</p>
-                        <p>...</p>
-                        <p>17</p>
-                        <p>0</p>
-                    </div>
-        </section>
-
-
-
-        <footer>
-
-            <div class="footer_container">
-
-                <div class="footer_section_1">
-                    <h2>Hele</h2>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="#">Help Centre</a>
-                                <a href="#">Privacy Settings</a>
-                            </li>
-                        </ul>
-                    </nav>
-
-                    <div class="icons">
-                        <a href="http://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="http://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="http://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                    </div>
-                </div>
-
-
-                <div class="logo">
-                    <a href="index.html">
-                        <h1>Earthly<span>Artisry</span></h1>
-                    </a>
-                </div>
-
-                <div class="footer_section_3">
-                    <p><i class="fa-solid fa-phone"></i> +123 45 67 89</p>
-                    <p><i class="fa-solid fa-envelope"></i> example@mail.com</p>
-                    <p><i class="fa-solid fa-location-dot"></i> Rustaveli avenue, 30</p>
-                </div>
-
-
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Earthly<span>Artisry</span></h1>
+                </a>
             </div>
-        </footer>
+
+            <div class="footer_section_3">
+                <a href="tel:+123 45 67 89"><i class="fa-solid fa-phone" target="_blank"></i>+123 45 67 89</a> <br>
+                <a href="mailto:example@mail.com"><i class="fa-solid fa-envelope"
+                        target="_blank"></i>example@mail.com</a> <br>
+                <a href="https://maps.app.goo.gl/fP4TQYDX3xp3goe77" target="_blank"><i
+                        class="fa-solid fa-location-dot"></i>Rustaveli avenue, 30</a>
+            </div>
 
 
+        </div>
+    </footer>
 
+
+    <script src="script.js"></script>
 
 </body>
 
