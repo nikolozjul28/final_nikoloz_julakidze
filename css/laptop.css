@@ -6,7 +6,7 @@
         display: flex;
     }
     .header_menu {
-        max-width:744px;
+        max-width:1024px;
     }
 
     .header_nav {
@@ -38,25 +38,9 @@
 
    /* gallery */
 
-.gallery_pics_container_1 {
-    display: block;
-}
-
-.gallery_img1 {
-    margin-bottom: 40px;
-}
-
-.gallery_img2 {
-    max-width: 704px;
-    height: 322px;
-}
-
-.gallery_img5 {
-    display: none;
-}
 
 .shop_all_title {
-    width: 432px;
+    width: 960px;
     margin: auto;
 }
 
