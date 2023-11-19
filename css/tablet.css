@@ -5,8 +5,9 @@
         height: 78px;
         display: flex;
     }
+
     .header_menu {
-        max-width:744px;
+        max-width: 744px;
     }
 
     .header_nav {
@@ -35,55 +36,87 @@
 
     /* pics */
 
+    .main_categories_container {
+        display: block;
+    }
 
-   /* gallery */
+    /* gallery */
 
-.gallery_pics_container_1 {
-    display: block;
-}
+    .gallery_pics_container_1 {
+        display: block;
+    }
 
-.gallery_img1 {
-    margin-bottom: 40px;
-}
+    .gallery_inside_section {
+        padding: 0 24px;
+    }
 
-.gallery_img2 {
-    max-width: 704px;
-    height: 322px;
-}
+    .gallery_img1 {
+        margin-bottom: 40px;
+    }
 
-.gallery_img5 {
-    display: none;
-}
+    .gallery_img2 {
+        max-width: 704px;
+        height: 322px;
+    }
 
-.shop_all_title {
-    width: 432px;
-    margin: auto;
-}
+    .gallery_img5 {
+        display: none;
+    }
 
-.shop_all_title p {
-    height: 70px;
-}
-.shop_all_container1 {
-    display: block;
-    width: 432px;
-    margin: auto;
-}
+    .shop_all_title {
+        width: 432px;
+        margin: auto;
+    }
 
-.shop_all_container1 figure img:first-child {
-    width:100% ;
-}
+    .shop_all_title p {
+        height: 70px;
+    }
 
-.price_and_cart {
-    margin-bottom: 32px;
-}
+    .shop_all_container1 {
+        display: block;
+        width: 432px;
+        margin: auto;
+    }
 
-.contact_section_text_container1 {
-    display: block;
-}
+    .shop_all_container1 figure img:first-child {
+        width: 100%;
+    }
 
-.contact_section_text_container1 iframe {
-    width: 100%;
-}
+    .price_and_cart {
+        margin-bottom: 32px;
+    }
 
-   
+    .contact_section_text_container1 {
+        display: block;
+    }
+
+    .contact_section_text_container1 iframe {
+        width: 100%;
+    }
+
+    .footer_container2 {
+        padding: 24px;
+        display: block;
+        margin: auto;
+        width: 300px;
+        text-align: center;
+        padding-bottom: 24px;
+    }
+
+    .logo {
+        margin: 24px 0;
+    }
+
+    .fa-youtube,
+    .fa-instagram,
+    .fa-facebook {
+        margin: 24px 0 12px 0;
+    }
+
+    .icons,
+    .footer_section_3 {
+        margin: auto;
+    }
+
+
 }
