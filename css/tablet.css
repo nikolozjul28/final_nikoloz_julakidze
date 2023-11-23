@@ -1,14 +1,4 @@
-@media (max-width:744px) {
-
-    .header {
-        padding: 9px 24px;
-        height: 78px;
-        display: flex;
-    }
-
-    .header_menu {
-        max-width: 744px;
-    }
+@media (max-width:900px) {
 
     .header_nav {
         position: fixed;
@@ -34,89 +24,51 @@
         left: 0;
     }
 
-    /* pics */
+    .header {
+        padding: 9px 24px;
+    }
+
+    .logo {
+        display: block;
+        text-align: center;
+    }
 
     .main_categories_container {
         display: block;
     }
 
-    /* gallery */
+    .category2 {
+        margin-top: 40px;
+    }
 
     .gallery_pics_container_1 {
         display: block;
+        width: 100%;
     }
 
-    .gallery_inside_section {
-        padding: 0 24px;
-    }
-
-    .gallery_img1 {
-        margin-bottom: 40px;
+    .gallery_img1,
+    .gallery_img2 {
+        max-width: 900px;
+        width: 100%;
+        height: 240px;
+        background-position: 50%;
+        background-size: cover;
     }
 
     .gallery_img2 {
-        max-width: 704px;
-        height: 322px;
+        margin-top:40px;
+    }
+
+    .gallery_img3,
+    .gallery_img4 {
+        max-width: 450px;
+        width: 100%;
+        background-position: 50%;
+        background-size: cover;
     }
 
     .gallery_img5 {
         display: none;
     }
-
-    .shop_all_title {
-        width: 432px;
-        margin: auto;
-    }
-
-    .shop_all_title p {
-        height: 70px;
-    }
-
-    .shop_all_container1 {
-        display: block;
-        width: 432px;
-        margin: auto;
-    }
-
-    .shop_all_container1 figure img:first-child {
-        width: 100%;
-    }
-
-    .price_and_cart {
-        margin-bottom: 32px;
-    }
-
-    .contact_section_text_container1 {
-        display: block;
-    }
-
-    .contact_section_text_container1 iframe {
-        width: 100%;
-    }
-
-    .footer_container2 {
-        padding: 24px;
-        display: block;
-        margin: auto;
-        width: 300px;
-        text-align: center;
-        padding-bottom: 24px;
-    }
-
-    .logo {
-        margin: 24px 0;
-    }
-
-    .fa-youtube,
-    .fa-instagram,
-    .fa-facebook {
-        margin: 24px 0 12px 0;
-    }
-
-    .icons,
-    .footer_section_3 {
-        margin: auto;
-    }
-
 
 }
