@@ -472,7 +472,7 @@ main {
 /* subscribe_to_newsletter */
 
 .subscribe_to_newsletter {
-    padding: 160px 0;
+    padding: 160px 32px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -491,7 +491,8 @@ main {
 }
 
 .subscribe form {
-    width: 482px;
+    max-width: 482px;
+    width: 100%;
     display: flex;
     column-gap: 0;
 }
