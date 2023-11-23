@@ -1,53 +1,96 @@
-@media (max-width:1024px) {
+@media (max-width:1260px) {
 
-    .main_cover {
-        padding: 0 32px;
+    .gallery_inside_section {
+        max-width: 1024px;
+        padding-inline: 32px;
     }
 
-    .shop_all {
-        max-width: 1024px;
+    .gallery_pics_container_1,
+    .gallery_pics_container_2 {
+        column-gap: 24px;
+    }
+
+    .gallery_img1 {
+        width: 591px;
+        height: 332px;
+    }
+
+    .gallery_img2 {
+        width: 345px;
+        height: 332px;
+    }
+
+    .gallery_img3,
+    .gallery_img4 {
+        width: 284px;
+        height: 260px;
+    }
+
+    .gallery_img5 {
+        width: 345px;
+        height: 260px;
+    }
+
+    .latest_products {
+        padding-inline: 32px;
+    }
+
+    .subscribe_to_newsletter {
+        padding-inline: 32px;
+    }
+
+    .contact_section_padding {
+        padding: 0 24px;
+    }
+
+
+    /* about_us */
+
+    .about_us {
+        padding-inline: 32px;
+    }
+
+    .about_us_container {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .about_us_container_block {
+        justify-content: center;
+    }
+
+    .the_text1,
+    .the_text2 {
+        width: calc(500 / 1024 * 100%);
+    }
+
+    .the_text3 {
         width: 100%;
     }
-    
-    .shop_all_container1 {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 40px;
+
+    /* about_us_end */
+
+    .shop_all {
+        padding-inline: 32px;
     }
 
-    .shop_all_container1 figure {
-        display: inline-block;
+    .shop_all_title_outside {
+        width: 792px;
+        display: block;
+        margin: auto;
     }
-     
-    .shop_all_container1 figcaption {
-        color: #B53B1B;
-        font-size: 16px;
-        font-family: 'Inter', sans-serif;
-        font-weight: 400;
-        margin-top: 24px;
+
+    .the_card:last-child {
+        display: none;
     }
-    
-    .price_and_cart {
-        display: flex;
-        justify-content: space-between;
-        align-items: end;
-        margin-top: 16px;
+
+    .main_cover_container_contact {
+        margin-left: 32px;
     }
-    
-    .price_and_cart p {
-        color: #402101;
-        font-size: 24px;
-        font-family: 'Inter', sans-serif;
-        font-weight: 400;
-        line-height: 32px;
-    }
-    
-    .price_and_cart img {
-        width: 40px;
-        height: 40px;
-        border-radius: 5px;
+
+    footer {
+        padding: 32px;
     }
 
 
-   
 }
