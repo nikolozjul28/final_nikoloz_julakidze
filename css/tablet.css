@@ -71,6 +71,14 @@
         display: none;
     }
 
+    .contact_section_text_container1 {
+        display: block;
+    }
+
+    .map {
+        width: 100%;
+    }
+
 }
 
 @media (max-width:854px) {
@@ -87,4 +95,6 @@
         width: 384px;
         margin: auto;
     }
+
+
 }
