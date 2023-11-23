@@ -488,6 +488,7 @@ main {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     margin-bottom: 56px;
+    text-align: center;
 }
 
 .subscribe form {
