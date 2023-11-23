@@ -53,4 +53,18 @@
         display: none;
     }
 
+    .pages {
+        width: 384px;
+    }
+
+    .pages p {
+        font-size: 16px;
+        padding: 10px 12px;
+        margin: auto;
+    }
+
+    .main_cover_container_contact {
+        max-width: 384px;
+    }
+
 }
