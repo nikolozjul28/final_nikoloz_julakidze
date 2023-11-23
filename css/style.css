@@ -482,24 +482,32 @@ main {
     background-image: url("../images/Rectangle\ 98.png");
 }
 
+subscribe_to_newsletter_inside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .subscribe_to_newsletter_inside h2 {
     color: white;
     font-size: 40px;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     margin-bottom: 56px;
-    text-align: center;
 }
 
 .subscribe form {
     max-width: 482px;
     width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     column-gap: 0;
 }
 
 .subscribe input {
     width: 100%;
+    height: 56px;
     border-radius: 10px 0 0 10px;
     background-color: transparent;
     border: 1px solid white;
