@@ -56,7 +56,7 @@
     }
 
     .gallery_img2 {
-        margin-top:40px;
+        margin-top: 40px;
     }
 
     .gallery_img3,
@@ -71,4 +71,20 @@
         display: none;
     }
 
+}
+
+@media (max-width:854px) {
+    .shop_all_title h2 {
+        font-size: 16px;
+    }
+
+    .shop_all_title p {
+        font-size: 16px;
+    }
+
+    .shop_all_title_outside {
+        max-width: 384px;
+        width: 384px;
+        margin: auto;
+    }
 }
