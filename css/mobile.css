@@ -3,8 +3,9 @@
     .gallery_pics_container_2 {
         margin-top: 20px;
     }
+
     .gallery_img2 {
-        margin-top:20px;
+        margin-top: 20px;
     }
 
     .gallery_img3 {
@@ -18,7 +19,7 @@
     .gallery_img4 {
         display: none;
     }
-    
+
     .footer_container {
         display: block;
         text-align: center;
@@ -64,11 +65,14 @@
     }
 
     .subscribe input {
-        max-width: 300px;
+        width: 250px;
     }
 
     .subscribe button {
         font-size: 14px;
     }
 
+    .main_cover_container_contact {
+        max-width: 360px;
+    }
 }
