@@ -183,7 +183,8 @@ input {
     background-color: rgba(64, 33, 1, 0.73)
 }
 
-.main_cover_container_contact h2 {
+.main_cover_container_contact h2,
+.main_cover_container h2 {
     color: white;
     font-size: 40px;
     font-family: 'Inter', sans-serif;
